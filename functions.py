@@ -17,6 +17,7 @@ def greeting(b):
     print("greetin is exeuted")
     return f"HI {b}"
 
+
     # Call
 greet("Zikirullo")
 
@@ -45,3 +46,18 @@ def defaultGreet(name, age=21):
 
 result4 = defaultGreet("Levi")
 print("result3:", result4)
+
+print("=== Scope ===")
+
+b = 100
+
+
+def calculate(a, b):
+    c = a * b
+    print(f"the value c: {c}")
+
+
+calculate(5, 50)
+
+
+# birinchi function ichidan, keyn paramentdan, agar xar ikki joyda bolmasa function tashqarisidan qiymatni oladi
