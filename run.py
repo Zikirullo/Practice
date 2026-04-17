@@ -1,3 +1,4 @@
+# part 1
 # Dunder: __buitdins__, __init__.
 
 message = ("PYTHON: Everything is object!")

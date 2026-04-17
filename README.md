@@ -22,6 +22,8 @@ git pull origin master
 ## Python Foundation
 
 - Primitive Variables
+  Pythonda hamma narsa object hisoblanadi. Pythonda hamma narsa reference ga ega
+  Dunder Python ichki qurilishi
 - Function
 - Object
 - Class
