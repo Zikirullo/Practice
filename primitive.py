@@ -39,3 +39,17 @@ result = course.replace("FULLSTACK", "MasterClass")
 print(f"the result: {result}")
 
 print(result)
+
+print("=== boolean ===")
+
+# functions > type(), input(), bool(), int(), str()
+# TRUTHY: true, 100, -100, "MIT"
+# FALSY: false, 0, "", NOne
+
+y = input("Give your Valur for y:")
+print(y)
+result = y.isnumeric()
+print(f"the input number is numeric: {result}")
+
+test_falsy = ""
+print("The Falsy:", bool(test_falsy))
