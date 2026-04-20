@@ -1,9 +1,11 @@
-// Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+/*MITTASK-A
+Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+ MASALAN countLetter("e", "engineer") 3ni return qiladi.
+*/
 
 console.log("Solution");
 
-function mitTask(letter, word) {
+function mitTaskA(letter, word) {
   const splitWord = word.split("");
   const filterWord = splitWord.filter((ele) => {
     return ele === letter;
@@ -11,4 +13,19 @@ function mitTask(letter, word) {
   return filterWord.length;
 }
 
-console.log(mitTask("o", "toyota"));
+console.log(mitTaskA("o", "toyota"));
+
+/* 
+B-TASK (NodeJS)
+
+Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+*/
+
+console.log("Solutuion2");
+
+function countDigits(random) {
+  const splitting = random.split("");
+  //   const filterring = random.filter();
+}
+console.log(countDigits("kfjq094902qof"));
