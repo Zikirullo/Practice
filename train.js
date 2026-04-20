@@ -24,8 +24,12 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
 console.log("Solutuion2");
 
-function countDigits(random) {
-  const splitting = random.split("");
-  //   const filterring = random.filter();
+function countDigits(str) {
+  const splitStr = str.split("");
+  const filterDigits = splitStr.filter((ele) => {
+    return ele >= "0" && ele <= "9";
+  });
+  return filterDigits.length;
 }
-console.log(countDigits("kfjq094902qof"));
+
+console.log(countDigits("jfw923983sdf238dfh83r2"));
