@@ -26,6 +26,8 @@ try:
     change = car_dict.speed
     result = car_dict["origin "]
     print("result")
+except Exception as err:
+    print("General Error", err)
 except KeyError as err:
     print("No data for origin was found, please try again", err)
 except AttributeError as err:
