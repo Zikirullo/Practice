@@ -7,8 +7,18 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 // Masalaning yechimi
 console.log("Solution");
 
-function checkContent(word1, word2) {}
-console.log(checkContent("mitGroup", "groupMit"));
+function checkContent(str, str1) {
+  const arr = str.split("").sort();
+  const arr1 = str1.split("").sort();
+
+  const joined = arr.join("");
+  const joined1 = arr1.join("");
+
+  return joined === joined1;
+}
+
+console.log(checkContent("hello", "olleh"));
+
 /* B-TASK (NodeJS)
 
 Savol: Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
