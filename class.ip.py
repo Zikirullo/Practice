@@ -29,6 +29,9 @@ class Dog(Animal):
     def protects(self):
         print(f'Yes, I can protect you')
 
+    def makeVoice(self):
+        print(f"The {self.name} says: {self.sound}")
+
 
 class Cat(Animal):
     def __init__(self, name, sound, voice):
@@ -59,3 +62,18 @@ cat.makeVoice()
 
 print('dog status:', dog.status)
 print('cat status:', cat.status)
+
+print('=== Polymorphism ===')
+
+dog.makeVoice()
+cat.makeVoice()
+
+# Polymorphism => bir xil methodning xar xil shakillarni bolishi va inheretance qonuniyatiga ko'ra
+# child classi o'zining tarkibida soralyotgan method ni topsa ushani ishlatadi agar yoq bolsa parentdan ushbu methodni  qabul qiladi.
+
+a = isinstance(cat, Cat)
+b = isinstance(dog, Animal)
+c = isinstance(cat, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print('the result:', result)
