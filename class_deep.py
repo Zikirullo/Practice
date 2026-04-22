@@ -1,6 +1,6 @@
 print("=== ENCAPSULATION ===")
 
-'''                                                 N O T E S
+'''                                                  N O T E S
 
 IN languages like c++, java, PhP, Typescript Encapsulation works in following way => public, private, protected.
 IN Python => for public = just the "name", 
