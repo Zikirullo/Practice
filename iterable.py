@@ -24,7 +24,10 @@ person = {
     "single": True
 }
 #                 OR
-person1 = dict(name="Levi", age=21, single=True)
+person1 = dict(
+    name="Levi",
+    age=21,
+    single=True)
 
 print(f"the person: {person}")
 print(f"the person1: {person1}")
