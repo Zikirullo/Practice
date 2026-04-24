@@ -68,3 +68,11 @@ def greet(*args, **kwargs):
 
 
 greet("hi", True, name="John", age=27)
+
+print('=== zip ===')
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+zipped = zip(tuple1, tuple2)
+print(zipped)
+result = list(zipped)
+print(result)
