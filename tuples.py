@@ -25,3 +25,25 @@ tuple_obj = ("MIT43", 2026, True)
 print(animal[0])
 
 print(animal)
+
+print("=== Unpackiing arguments ===")
+
+groups = ["MIT", "Flexy", "Devex", "MG"]
+(x, y, *z) = groups
+print(f"z: {z}")
+
+
+def calculate(*args):
+    print("*args", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+calculate(1, 7, 4, 5)
+print('--------------')
+calculate(0, 2, 300)
+print('--------------')
+calculate(5, 7)
