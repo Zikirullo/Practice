@@ -47,3 +47,14 @@ print('--------------')
 calculate(0, 2, 300)
 print('--------------')
 calculate(5, 7)
+
+print("=== kwargs ===")
+
+
+def introduce(**kwargs):
+    print(f"type of **kwargs => {type(kwargs)}")
+    print(f"Hi I'm {kwargs["name"]} and I'm {kwargs["age"]} years old")
+
+
+introduce(name="Levi", age=21)
+introduce(name="Zikirullo", age=21, single=True)
