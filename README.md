@@ -31,6 +31,11 @@ git pull origin master
 - Object
 - Class
 - Class deep dive
+- Class deep dive >
 - Operators & Conditions
 - Loops
-- ...
+- Tuples
+- List
+- Arrays
+- Comprehencion
+- Debbuging

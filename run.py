@@ -13,3 +13,9 @@ print(result)
 03.CONSTANS - True, False, None
 '''
 print(dir(__builtins__))
+
+a = 300
+b = 300
+
+print(id(a), id(b))
+print(a is b)
