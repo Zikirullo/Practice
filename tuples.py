@@ -58,3 +58,13 @@ def introduce(**kwargs):
 
 introduce(name="Levi", age=21)
 introduce(name="Zikirullo", age=21, single=True)
+
+print('=== args & kwargs ===')
+
+
+def greet(*args, **kwargs):
+    print("*args", args)
+    print(f"**kwargs", kwargs)
+
+
+greet("hi", True, name="John", age=27)
