@@ -1,8 +1,6 @@
 print("=== Iterable objects ===")
 '''
-
-
-
+Iterable objects: string, dict, tuple, list, range, map, filter
 '''
 text = "MIT"
 

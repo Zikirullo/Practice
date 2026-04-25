@@ -1,17 +1,36 @@
 /*
+E-TASK (NodeJS)
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+/*                                                         Quick notes
+Strings in JavaScript are immutable and do not have a native .reverse() method.
+To reverse a string, you typically convert it to an array, reverse it, and join it back
+*/
+// Masalaninig yechimi
+console.log("Solution");
+
+function getReverse(hello) {
+  const result = hello.split("").reverse().join("");
+  return result;
+}
+console.log(getReverse("hello"));
+
+/*
 D-TASK (NodeJS)
 
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
  */
 // Masalaning yechimi
-console.log("Solution");
+// console.log("Solution");
 
-function highIndex(arr) {
-  const max = Math.max(...arr);
-  return arr.indexOf(max);
-}
-console.log(highIndex([5, 21, 12, 201, 8]));
+// function highIndex(arr) {
+//   const max = Math.max(...arr);
+//   return arr.indexOf(max);
+// }
+// console.log(highIndex([5, 21, 12, 201, 8]));
 
 /*   C-TASK (NodeJS)
 
