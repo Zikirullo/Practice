@@ -9,10 +9,11 @@ Strings in JavaScript are immutable and do not have a native .reverse() method.
 To reverse a string, you typically convert it to an array, reverse it, and join it back
 */
 // Masalaninig yechimi
-console.log("Solution");
 
-function getReverse(hello) {
-  const result = hello.split("").reverse().join("");
+console.log("=== Solution ===");
+
+function getReverse(a) {
+  const result = a.split("").reverse().join("");
   return result;
 }
 console.log(getReverse("hello"));
