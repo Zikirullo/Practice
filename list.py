@@ -89,18 +89,6 @@ def calculate(a, b): return a * b
 result = calculate(3, 5)
 print(result)
 
-people = [
-    ("Zikirullo", 21),
-    ("Levi", 25),
-    ("Max", 12),
-    ("Ann", 56)
-]
-
-people.sort()
-print(f'Case 1: {people}')
-
-people.sort(key=lambda person: person[1])
-print(f"Case 2: {people}")
 
 print("=== enumerate, map and filter ===")
 print("✅"*20)
