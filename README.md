@@ -39,3 +39,13 @@ git pull origin master
 - Arrays
 - Comprehencion
 - Debbuging
+
+## PIP commands
+
+for macOS pip3
+
+- pip list
+- pip install (\*\*\*)
+- pip uninstall (\*\*\*)
+- pip show (\*\*\*)
+- pip freeze > requirements.txt
