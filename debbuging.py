@@ -5,12 +5,12 @@ print("=== Python packages & core packages ===")
 '''
 There are three type of modules/packages in python: core, file, external
 '''
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(2)
-# t.circle(150)
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(2)
+t.circle(150)
 
-# turtle.done
+turtle.done
 
 # By the following approach we have to open and close every file we add.
 
@@ -29,10 +29,10 @@ print("=== Package manager & External packages ===")
 # Package manager for PYTHON: pip, pipenv
 # Package manager for NODEJS: npm yarn
 
-# with Image.open("material/logo.jpg") as img_obj:
-#     resize = img_obj.resize((200, 200))
-#     resize.show()
-#     resize.save("material/result.jpg")
+with Image.open("material/logo.jpg") as img_obj:
+    resize = img_obj.resize((200, 200))
+    resize.show()
+    resize.save("material/result.jpg")
 
 print("=== Debugging ===")
 

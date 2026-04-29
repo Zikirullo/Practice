@@ -5,11 +5,18 @@ Shunday findDoublers function tuzing, unga faqat bitta string argument pass boli
 MASALAN: getReverse("hello") return true return qiladi
 */
 // Masalaning yechimi
-console.log("Solution");
 
-function findDoublers(hello) {
-  const a = hello.stlit("");
+function findDoublers(str) {
+  const splitStr = str.split("");
+
+  const hasDouble = splitStr.some((ele) => {
+    const count = splitStr.filter((ch) => ch === ele).length;
+    return count > 1;
+  });
+
+  return hasDouble;
 }
+console.log(findDoublers("helllo"));
 
 /*
 E-TASK (NodeJS)
