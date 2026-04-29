@@ -29,7 +29,20 @@ print("=== Package manager & External packages ===")
 # Package manager for PYTHON: pip, pipenv
 # Package manager for NODEJS: npm yarn
 
-with Image.open("material/logo.jpg") as img_obj:
-    resize = img_obj.resize((200, 200))
-    resize.show()
-    resize.save("material/result.jpg")
+# with Image.open("material/logo.jpg") as img_obj:
+#     resize = img_obj.resize((200, 200))
+#     resize.show()
+#     resize.save("material/result.jpg")
+
+print("=== Debugging ===")
+
+
+def get(*args):
+    total = 0
+    for a in args:
+        total += a
+        return total  # debugging
+
+
+result = get(1, 2, 3, 4, 5)
+print(result)
