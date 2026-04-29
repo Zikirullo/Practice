@@ -1,3 +1,4 @@
+from PIL import Image
 import turtle
 print("=== Python packages & core packages ===")
 
@@ -23,3 +24,12 @@ finally:
 with open("material/message.txt", "r") as your_file:
     your_content = your_file.read()
     print("your_content:", your_content)
+
+print("=== Package manager & External packages ===")
+# Package manager for PYTHON: pip, pipenv
+# Package manager for NODEJS: npm yarn
+
+with Image.open("material/logo.jpg") as img_obj:
+    resize = img_obj.resize((200, 200))
+    resize.show()
+    resize.save("material/result.jpg")
