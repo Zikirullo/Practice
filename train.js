@@ -1,3 +1,21 @@
+/* H-TASK (NodeJS)
+shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib,
+faqat positive qiymatlarni olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+
+*/
+function hTask(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result.join(",");
+}
+
+console.log(hTask([1, 4, 23, 3, 2, 3, -12, -21, 0]));
+
 /*
 F-TASK (NodeJS)
 
@@ -6,17 +24,17 @@ MASALAN: getReverse("hello") return true return qiladi
 */
 // Masalaning yechimi
 
-function findDoublers(str) {
-  const splitStr = str.split("");
+// function findDoublers(str) {
+//   const splitStr = str.split("");
 
-  const hasDouble = splitStr.some((ele) => {
-    const count = splitStr.filter((ch) => ch === ele).length;
-    return count > 1;
-  });
+//   const hasDouble = splitStr.some((ele) => {
+//     const count = splitStr.filter((ch) => ch === ele).length;
+//     return count > 1;
+//   });
 
-  return hasDouble;
-}
-console.log(findDoublers("helllo"));
+//   return hasDouble;
+// }
+// console.log(findDoublers("helllo"));
 
 /*
 E-TASK (NodeJS)
