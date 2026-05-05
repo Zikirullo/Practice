@@ -1,3 +1,21 @@
+
+'''
+I-TASK (PYTHON)
+
+Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+MASALAN: get_digits("m14i1t") return qiladi "141"
+'''
+# Masalaning yechimi
+print("=== Solution ===")
+
+
+def get_digits(digit):
+    return ''.join(filter(str.isdigit, digit))
+
+
+print(get_digits("m14i321t"))
+
+
 '''
 G-TASK (PYTHON)
 
