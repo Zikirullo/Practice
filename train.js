@@ -1,22 +1,37 @@
 /*
+ P-TASK (NodeJS)
+
+Shunday function yozing, u object qabul qilsin va arrayni object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+ */
+
+console.log("=== Solution ===");
+
+function objectToArray(obj) {
+  const keys = Object.entries({ a: 10, b: 20 });
+  console.log(keys);
+}
+objectToArray({ a: 10, b: 20 });
+
+/*
 N-TASK (NodeJS)
 
 Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
 MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
 */
 
-console.log("Solution");
+// console.log("Solution");
 
-function getSquareNumbers(arr) {
-  return arr.map((num) => {
-    return {
-      number: num,
-      square: num ** 2,
-    };
-  });
-}
+// function getSquareNumbers(arr) {
+//   return arr.map((num) => {
+//     return {
+//       number: num,
+//       square: num ** 2,
+//     };
+//   });
+// }
 
-console.log(getSquareNumbers([1, 2, 3]));
+// console.log(getSquareNumbers([1, 2, 3]));
 
 /*
 L-TASK
